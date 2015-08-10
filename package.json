@@ -1,15 +1,15 @@
 {
-	"name": "icehunter-syntax",
-	"theme": "syntax",
-	"version": "0.1.2",
-	"description": "My own syntax highlighting :)",
-	"keywords": [
-		"syntax",
-		"theme"
-	],
-	"repository": "https://github.com/icehunter/icehunter-syntax",
-	"license": "MIT",
-	"engines": {
-		"atom": ">=1.0.0 <2.0.0"
-	}
+  "name": "icehunter-syntax",
+  "theme": "syntax",
+  "version": "0.1.3",
+  "description": "My own syntax highlighting :)",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/icehunter/icehunter-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
