@@ -34,7 +34,7 @@ atom-text-editor,
 	.gutter .line-number.folded,
 	.gutter .line-number:after,
 	.fold-marker:after {
-		color: @light-gray;
+		color: @md-light-grey;
 	}
 	.invisible {
 		color: @syntax-text-color;
@@ -55,74 +55,79 @@ atom-text-editor .search-results .marker.current-result .region,
 :host .search-results .marker.current-result .region {
 	border: 1px solid @syntax-result-marker-color-selected;
 }
+.scrollbars-visible-always {
+	/deep/::-webkit-scrollbar-thumb {
+		background: @md-dark-grey !important;
+	}
+}
 .comment {
 	color: @syntax-comments-color;
 }
 .entity {
 	&.name.type {
-		color: @light-orange;
+		color: @md-amber;
 		text-decoration: underline;
 	}
 	&.other.inherited-class {
-		color: @green;
+		color: @md-green;
 	}
 }
 .keyword {
-	color: @purple;
+	color: @md-purple;
 	&.control {
-		color: @purple;
+		color: @md-purple;
 	}
 	&.operator {
 		color: @syntax-text-color;
 	}
 	&.other.special-method {
-		color: @blue;
+		color: @md-blue;
 	}
 	&.other.unit {
-		color: @orange;
+		color: @md-orange;
 	}
 }
 .storage {
-	color: @light-blue;
+	color: @md-light-blue;
 }
 .constant {
-	color: @orange;
+	color: @md-orange;
 	&.character.escape {
-		color: @cyan;
+		color: @md-cyan;
 	}
 	&.numeric {
-		color: @orange;
+		color: @md-orange;
 	}
 	&.other.color {
-		color: @cyan;
+		color: @md-cyan;
 	}
 	&.other.symbol {
-		color: @green;
+		color: @md-green;
 	}
 }
 .variable {
-	color: @red;
+	color: @md-red;
 	&.interpolation {
-		color: darken(@red, 10%);
+		color: darken(@md-red, 10%);
 	}
 	&.parameter.function {
 		color: white;
 	}
 }
 .invalid.illegal {
-	background-color: @red;
+	background-color: @md-red;
 	color: @syntax-background-color;
 }
 .string {
-	color: @green;
+	color: @md-green;
 	&.regexp {
-		color: @cyan;
+		color: @md-cyan;
 		.source.ruby.embedded {
-			color: @orange;
+			color: @md-orange;
 		}
 	}
 	&.other.link {
-		color: @red;
+		color: @md-red;
 	}
 }
 .punctuation {
@@ -138,69 +143,69 @@ atom-text-editor .search-results .marker.current-result .region,
 		}
 		&.heading,
 		&.identity {
-			color: @blue;
+			color: @md-blue;
 		}
 		&.bold {
-			color: @light-orange;
+			color: @md-amber;
 			font-weight: bold;
 		}
 		&.italic {
-			color: @purple;
+			color: @md-purple;
 			font-style: italic;
 		}
 	}
 	&.section.embedded {
-		color: darken(@red, 10%);
+		color: darken(@md-red, 10%);
 	}
 }
 .support {
 	&.class {
-		color: @light-orange;
+		color: @md-amber;
 	}
 	&.function {
-		color: @cyan;
+		color: @md-cyan;
 		&.any-method {
-			color: @blue;
+			color: @md-blue;
 		}
 	}
 }
 .entity {
 	&.name.function {
-		color: @blue;
+		color: @md-blue;
 	}
 	&.name.class,
 	&.name.type.class {
-		color: @light-orange;
+		color: @md-amber;
 	}
 	&.name.section {
-		color: @blue;
+		color: @md-blue;
 	}
 	&.name.tag {
-		color: @red;
+		color: @md-red;
 		text-decoration: underline;
 	}
 	&.other.attribute-name {
-		color: @orange;
+		color: @md-orange;
 		&.id {
-			color: @blue;
+			color: @md-blue;
 		}
 	}
 }
 .meta {
 	&.class {
-		color: @light-orange;
+		color: @md-amber;
 	}
 	&.link {
-		color: @orange;
+		color: @md-orange;
 	}
 	&.require {
-		color: @blue;
+		color: @md-blue;
 	}
 	&.selector {
-		color: @purple;
+		color: @md-purple;
 	}
 	&.separator {
-		background-color: @gray;
+		background-color: @md-grey;
 		color: @syntax-text-color;
 	}
 }
@@ -209,39 +214,39 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 .markup {
 	&.bold {
-		color: @orange;
+		color: @md-orange;
 		font-weight: bold;
 	}
 	&.changed {
-		color: @purple;
+		color: @md-purple;
 	}
 	&.deleted {
-		color: @red;
+		color: @md-red;
 	}
 	&.italic {
-		color: @purple;
+		color: @md-purple;
 		font-style: italic;
 	}
 	&.heading .punctuation.definition.heading {
-		color: @blue;
+		color: @md-blue;
 	}
 	&.inserted {
-		color: @green;
+		color: @md-green;
 	}
 	&.list {
-		color: @red;
+		color: @md-red;
 	}
 	&.quote {
-		color: @orange;
+		color: @md-orange;
 	}
 	&.raw.inline {
-		color: @green;
+		color: @md-green;
 	}
 }
 .source.gfm .markup {
 	-webkit-font-smoothing: auto;
 	&.heading {
-		color: @green;
+		color: @md-green;
 	}
 }
 atom-text-editor[mini] .scroll-view,
